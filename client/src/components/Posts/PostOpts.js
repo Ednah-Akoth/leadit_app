@@ -29,8 +29,7 @@ const PostOpts = (props) => {
   return (
     <div className={classes.container}>
         <button name="TEXT" type="button" className={classes.button} id={pSelected} onClick={optionChangedHandler}>Post</button>
-        {/* <button name="IV" type="button" className={classes.btn} id={IVSelected} onClick={optionChangedHandler}>Images / Video</button>
-        <button name="LINK" type="button" className={classes.btn} id={lSelected} onClick={optionChangedHandler}>Link</button> */}
+       
     </div>
   );
 }

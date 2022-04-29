@@ -9,7 +9,8 @@ const WriteComment = (props) => {
   }
   const addCommentHandler = (event) => {
     event.preventDefault();
-    // EDIT: add err checking
+    // props.submissionHandlers.onAddPost(enteredTitle, enteredText, author_id, author_username)
+
     props.onAddComment(enteredComment)
   }
   const userContext = useContext(UserContext);
@@ -18,7 +19,7 @@ const WriteComment = (props) => {
         {!props.hideCommentAs && <p>Comment as <span className={classes.username}>{userContext.username}</span></p>}
         {props.hideCommentAs && <span className={classes.tempHack}/>}
         <form>
-            <textarea type="text" className={classes.comment_area} placeholder="What are your thoughts?" value={enteredComment} onChange={commentChangeHandler}/>
+            <textarea type="text" className={classes.comment_area} placeholder="Write here" value={enteredComment} onChange={commentChangeHandler}/>
         </form>
         <button className={classes.post_button} onClick={addCommentHandler}>Post Comment</button>
         {props.showCancelOpt && <button className={classes.postCmt} onClick={props.onCancel}>Cancel</button>}

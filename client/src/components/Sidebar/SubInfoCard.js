@@ -13,7 +13,7 @@ const SubInfoCard = (props) => {
         </div>
       </div>
       
-      <button className={classes.group_button}>Created By Group 18</button>
+      <button className={classes.group_button}>Created By Group 27</button>
     </div>
   );
 }

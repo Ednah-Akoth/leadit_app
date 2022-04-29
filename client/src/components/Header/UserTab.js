@@ -18,8 +18,8 @@ const UserTab = (props) => {
           {/* EDIT: temp, have img. click logout */}
           <img src={userLogo} className={classes.logo} onClick={showOptsHandler}/>
           <div className={classes.wrapper2} onClick={showOptsHandler}>
-            <h5 className={classes.username}>MeteorMash101</h5>
-            <p>Karma: <span>[Number]</span></p>
+            <h5 className={classes.username}>Myra Lugwiri</h5>
+            <p> <span>Vihenda</span></p>
           </div>
           {showOpts && <UserTabOpts/>}
       </div>

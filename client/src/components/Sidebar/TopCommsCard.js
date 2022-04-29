@@ -5,9 +5,9 @@ const TopCommsCard = (props) => {
   return (
     <div className={classes.container}>
         <h4 className={classes.h4}>Communities</h4>
-        <button onClick={() => navigate('/r/funny')} className={classes.buttons}>r/Funny</button>
-        <button onClick={() => navigate('/r/memes')} className={classes.buttons}>r/Memes</button>
-        <button onClick={() => navigate('/r/cute')} className={classes.buttons}>r/Cute</button>        
+        <button onClick={() => navigate('/r/funny')} className={classes.buttons}>r/Funny Coding</button>
+        <button onClick={() => navigate('/r/memes')} className={classes.buttons}>r/Javascript Memes</button>
+        <button onClick={() => navigate('/r/cute')} className={classes.buttons}>r/Cute Designs</button>        
     </div>
   );
 }

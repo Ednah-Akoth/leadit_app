@@ -1,4 +1,4 @@
-import logo from '../imgs/rl2.png';
+
 import classes from './MiniHeader.module.css';
 import EditOrRemoveBtns from '../EditNRemoveOps/EditOrRemoveBtns';
 import UserContext from '../../store/user-context';
@@ -19,14 +19,14 @@ const MiniHeader = (props) => {
       subredditColor = classes.pink;
       break;
     default:
-      // change nothing (is there better way?)
+      
       subredditColor = '';
   }
   return (
     <div className={classes.container}>
       <div className={classes.t_container}>
           <img className={classes.persona_img} id={subredditColor} src={Persona} alt="temp"/>
-          <p className={classes.miniHdrTxt}>r/[Subreddit] | Posted by  {props.author_username}</p>
+          <p className={classes.miniHdrTxt}>r/Subleadit | Posted by  Myra</p>
           {/* possible temporary placement...*/}
       </div>
       {/* Also need to make sure this Post's author ID is the same as the current logged in user's */}
